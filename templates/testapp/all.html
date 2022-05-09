@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    
+</head>
+
+
+    <div class='container'>
+        
+    <h1> All Employee Details</h1><hr>
+    
+
+    
+    
+    <table class= 'table table-dark table-stripped'>
+        <thead>
+            <tr>
+                
+            <th scope = 'col'>Number</th>
+            <th scope='col'> First_Name</th>
+            <th scope='col'> Last_Name</th>
+            <th scope='col'> Salary</th>
+            
+            <th scope='col'> Bonus</th>
+    
+            <th scope='col'> Phone</th>
+            <th scope='col'> Hire_Date</th>
+            <th scope='col'> Department</th>
+            <th scope='col'> Role</th>
+            <th scope='col'> Location</th>
+            </tr>
+        </thead>
+        {% for emp in emps %}
+        
+        
+        <tbody>
+        <tr>
+            <th scope='row'>{{emp.eno}}</th>
+            <td>{{emp.efirst_name}}</td>
+            <td>{{emp.elast_name}}</td>
+            <td>{{emp.esal}}</td>
+            
+            <td>{{emp.ebonus}}</td>
+            
+            <td>{{emp.ephone}}</td>
+            <td>{{emp.ehire_date}}</td>
+            <td>{{emp.edept.name}}</td>
+            <td>{{emp.erole.name}}</td>
+            <td>{{emp.elocation}}</td>
+        </tr>
+    </tbody>
+        {% endfor %}
+</table>
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    
+
+</html>
+    
+        
+            
+    

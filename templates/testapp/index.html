@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+
+
+    <div class='container'>
+    <h1> All Employee Details</h1><hr>
+    
+    <table border=5>
+        <thead>
+            <th>Employee Number</th>
+            <th>Employee First_Name</th>
+            <th>Employee Last_Name</th>
+            <th>Employee Salary</th>
+            
+            <th>Employee Bonus</th>
+    
+            <th>Employee Phone</th>
+            <th>Employee Hire_Date</th>
+            <th>Employee Department</th>
+            <th>Employee Role</th>
+            <th>Employee Location</th>
+        </thead>
+        {%for emp in emps%}
+        <body>
+        
+        <tr>
+            <td>{{emp.eno}}</td>
+            <td>{{emp.efirst_name}}</td>
+            <td>{{emp.elast_name}}</td>
+            <td>{{emp.esal}}</td>
+            
+            <td>{{emp.ebonus}}</td>
+            
+            <td>{{emp.ephone}}</td>
+            <td>{{emp.ehire_date}}</td>
+            <td>{{emp.edept}}</td>
+            <td>{{emp.erole}}</td>
+            <td>{{emp.elocation}}</td>
+        </tr>
+        
+    </table>
+    
+        
+            
+    
+    
+    
+    
+    
+        {%endfor%}
+    
+    
+        
+</body>
+</html>   
+        
+    
+    
+
+
+
+
+
